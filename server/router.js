@@ -40,4 +40,14 @@ router.get("/genres", (req, res) => {
       );
       })
 
+      router.get(`/yours`, (req, res) => {
+        fetch(`https://listen-api-test.listennotes.com/api/v2/episodes/93`).then(
+          async (response) => {
+            const data = await response.json();
+            res.status(200).send(data);
+          }
+        );
+        })
+  
+    
   module.exports = router;
