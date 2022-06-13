@@ -1,0 +1,56 @@
+/*  */
+/* .box {
+  width: 30px;
+} */
+.box h1 {
+    font-size: 20px;
+    margin: 0 0 1rem 0;
+    
+  }
+
+.w-6 {
+  width: 1.5em;
+}
+.h-6 {
+  height: 1.5em;
+}
+.flex {
+  display: flex;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* *{
+  padding:0;
+  margin:0;
+} */
+
+.bookmark.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 500px;
+  margin-top: 300px;
+  width: 100px;
+  height: 250px;
+  border-radius: 0 0 1px 1px ;
+  border-top: solid 10px currentColor;
+  border-left: solid 10px currentColor;
+  border-right: solid 10px currentColor;
+}
+
+.bookmark.icon:before {
+  content: '';
+  position: absolute;
+  top: 203px;
+  left: 8px;
+  width: 75px;
+  height: 75px;
+  border-radius: 0  0 10px 10px ;
+  z-index:-1;
+  border-top: solid 10px currentColor;
+  border-left: solid 10px currentColor;
+  -webkit-transform: rotate(48deg);
+          transform: rotate(45deg);
+}
+

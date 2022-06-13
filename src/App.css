@@ -1,0 +1,111 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.navbar {
+  height: 10vh;
+  width: 100%;
+  background-color:white;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  border: solid;
+
+}
+
+.main-logo {
+  height: 10vh;
+  width: 5%;
+  background-color: grey;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#main-logo {
+  height: 100%;
+  width: 100%;
+}
+
+.reg {
+  height: 5vh;
+  width: 4%;
+  background-color: white;
+  border-radius: 4px;
+  margin: 100px auto 0px;
+  text-align: center;
+  cursor: pointer;
+  padding: 5px 20px;
+  margin-right: 100px;
+}
+
+.reg:hover {
+  background-color: black;
+}
+
+
+.clickme h1 {
+  color: white;
+  font-size: 20px;
+  font-family: 'Tajawal', sans-serif;
+}
+/* 
+.clickme h1:hover {
+  color: black;
+  cursor: pointer;
+} */
+
+
+#podId {
+  cursor: pointer;
+}
+
+.navbutt {
+  margin-left: 580px;
+  width: 30%;
+  height: 50%;
+  background-color:white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#butt {
+  width: 20%;
+  background-color: white;
+  border-radius: 4px;
+}
+/* #butt:hover {
+  background-color: black;
+} */
+
+#butt h1 {
+  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+  color: black;
+  margin-left: 20px;
+}
+
+#butt h1:hover {
+  color: #FF3D00;
+  cursor: pointer;
+}
+
+.app {
+  margin-top: 1vh;
+    height: 85vh;
+    width: 80%;
+    /* margin-right: 250px; */
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+    /* border: solid; */
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
