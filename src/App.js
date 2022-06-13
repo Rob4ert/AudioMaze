@@ -65,6 +65,7 @@ function App() {
       <div className="main-logo" ><img id="main-logo" src={logo} alt="main logo" onClick={console.log("HELLO")}>
         </img></div>
         <Buttons  setAfter={setAfter} after={after}/>
+        {/* <Search /> */}
         </div>
         {toShow}
     </div>

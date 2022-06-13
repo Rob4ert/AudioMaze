@@ -18,7 +18,7 @@
 /* WELCOME SCREEN */
 
 .lastOne { /* Welcome screen podcast/last one player */  
-  margin-top: 2vh;
+  margin-bottom: -1vh;
   height: 40vh;
   width: 80%;
   background-color:#b1b7c1;
@@ -172,8 +172,11 @@
 
 /* ================= WELCOME ============== */
 .lastOne {
-  margin-top: 80px;
+  margin-top: 150px;
+  width: 40%;
+  height: 30vh;
   background-color: #3C4553;
+  position: absolute;
 }
 
 .lastOne h2 {
@@ -186,8 +189,8 @@
 
 .favs { /* DIV WITH THE EPISODES*/
   padding: 20px;
-  /* margin-bottom: 90px; */
-  height: 85vh;
+  margin-top: 225px;
+  height: 25vh;
   width: 90%;
   background-color: #3C4553;
   overflow: scroll;
@@ -212,10 +215,11 @@
   font-family: 'Tajawal', sans-serif;
   font-weight: bold;
   text-align: center;
-  border: solid;
+  /* border: solid; */
   border-radius: 25px;
   width: 30vh;
   background-color: #3C4553;;
+
 }
 
 .eachOne {
@@ -231,4 +235,16 @@
     overflow: scroll;
     border: solid;
     overflow: hidden;
+}
+
+.wilkomen {
+  width: 80%;
+  background-color: #3C4553;
+  height: 20vh;
+  margin-top: 20px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  /* position: absolute; */
+  border: solid;
 }

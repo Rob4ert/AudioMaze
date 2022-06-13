@@ -3,11 +3,15 @@
 
 // export default function Search () {
 //   return (
-//     <>
-//    <form className="se"onsubmit="event.preventDefault();" role="search">
-//   <label for="search">Search</label>
-//   <input id="search" type="search" placeholder="Search..." autofocus required />
-//   <button type="submit">Go</button>    
+//     <div class="searchBox">
+// <form action="/search?">
+//    <input class="searchInput" type="search" name="q" placeholder="Search"> </input>
+//    <button class="searchButton" type="submit">
+//    <i class="material-icons">
+//    search
+//    </i>
+//    </button>
 // </form>
-// </>)
+// </div>
+//         )
 // }

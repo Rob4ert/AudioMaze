@@ -13,13 +13,17 @@ import Rating from "./Rating";
 import Heart from "./Heart";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Podcast from "./Podcast";
+import heart from "../Images/heart.png"
+import Meter from "./Meter";
+import Stars from "./Rating";
+
 
 export default function Ranking(props) {
 
 
   const [show, setShow] = useState(false)
 
-
+  const [styl, setStyl] = useState(true)
   const [podcasts, setPodcasts] = useState([]);
 
 // /=============================================/ API
@@ -30,6 +34,12 @@ export default function Ranking(props) {
 
   }
 
+  const handleStyle = event => {
+      event.currentTarget.style.backgroundColor = 'salmon';
+
+    
+  };
+
   const navigate = useNavigate();
 
   const taker = () => {
@@ -37,6 +47,9 @@ export default function Ranking(props) {
     if (show)
     return navigate("/each");
       };
+
+
+      
 
     const each = 
     <>
@@ -56,7 +69,7 @@ export default function Ranking(props) {
           <p className="counter">{counter}</p>
           <div id="logodiv"><a id="podId"><img id="logo" src={el.image} alt="poster" onClick={taker}></img></a></div>
           <div id="rank-place" ><a id="podId"  onClick={taker}><p className="title-p">{[el.title]}</p></a></div>
-          <div id="rating" ><div className="Fafa"><i class='fa fa-bookmark'></i></div></div>
+          <div id="rating" ><div className="Fafa" ><Stars /><img src={heart} className="hearts" onClick={handleStyle}></img></div></div>
         
         </li> 
       )})

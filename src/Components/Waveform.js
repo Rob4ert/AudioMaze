@@ -39,7 +39,7 @@ const [isPlaying, toggleIsPlaying] = useState(false)
       <button onClick={() => { waveSurferRef.current.playPause()
           toggleIsPlaying(waveSurferRef.current.isPlaying())
         }}
-        type="button" className='playerButton'
+         className='playerButton'
       >
         {
         isPlaying ? <FaPauseCircle size="3em" /> : <FaPlayCircle size="3em" />
@@ -56,3 +56,4 @@ Waveform.propTypes = {
 }
 
 export default Waveform
+// /type="button"/ 

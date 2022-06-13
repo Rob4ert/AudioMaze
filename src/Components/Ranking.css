@@ -97,6 +97,7 @@
   height: 100%;
   border-radius: 25px;
   background-color: #3C4553;
+ 
 }
 
 #rating p {
@@ -189,6 +190,10 @@
 
 }
 
+.title-p:hover {
+  opacity: .5;
+}
+
 .counter {
   font-family: 'Tajawal', sans-serif;
   color: white;
@@ -200,6 +205,24 @@
 
 
 .Fafa {
-  margin-left: -100px;
-  weight: 100px;
+  height: 8vh;
+  margin-top: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+}
+
+.hearts {
+  margin-left: 60px;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+.hearts:hover {
+background-color: white;
 }
