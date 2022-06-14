@@ -11,11 +11,11 @@ import Buttons from "./Buttons";
 
 export default function Container({after}) {
 
-
+const [liked, setLiked] = useState([])
 
   return (
     <div className="main"> 
-    {after? (<Welcome />) : (<Ranking />)}
+    {after? (<Welcome liked={liked} />) : (<Ranking liked={liked} setLiked={(i)=>setLiked(i)}/>)}
     {/* <Welcome /> */}
     </div>
   )

@@ -17,6 +17,8 @@
     "koa-bodyparser": "^4.3.0",
     "koa-router": "^10.1.1",
     "mongoose": "^6.3.6",
+    "nodemon": "^2.0.16",
+    "podcast-api": "^1.1.1",
     "react-router-dom": "^6.3.0"
   }
 }

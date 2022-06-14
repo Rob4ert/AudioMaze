@@ -1,6 +1,6 @@
 .reset {
   margin-top: 10vh;
-  height: 22vh;
+  height: 27vh;
   width: 30%;
   background-color: white;
   border-radius: 10px;
@@ -8,6 +8,7 @@
   flex-direction: column;
   align-items: center;
   border:solid;
+  box-shadow: 10px 5px  black;
 }
 
 .reset__container {

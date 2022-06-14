@@ -10,6 +10,8 @@
     align-items: center;
     overflow: scroll;
     border: solid;
+    box-shadow: 10px 5px  black;
+
 }
 
 .main::-webkit-scrollbar {
@@ -247,4 +249,19 @@
   justify-content: center;
   /* position: absolute; */
   border: solid;
+}
+
+#favslist {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+#favslist:hover {
+  color: #FF3D00;
+}
+
+.bullets {
+  list-style-type: none;
 }

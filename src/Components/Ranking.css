@@ -5,7 +5,7 @@
 #rank { /* DIV WITH THE RANKING LIST */
   
   margin-top: 2vh;
-  height: 85vh;
+  height: 72vh;
   width: 90%;
   background-color: white;
   border-radius: 25px;
@@ -16,6 +16,8 @@
   overflow: hidden;
   overflow:scroll;
   border: solid;
+  box-shadow: 10px 5px  black;
+  
 }
 /* #ccd5e3; */
 
@@ -50,7 +52,7 @@
   justify-content:space-evenly;
   align-items: flex-start;
   background-color: #3C4553;
-  border:solid #263238
+  border:solid #263238;
 
 }
 

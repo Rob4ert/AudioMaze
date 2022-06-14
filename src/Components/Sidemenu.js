@@ -4,6 +4,21 @@ import { useEffect, useState } from "react";
 
 
 export default function Sidemenu() {
+  const [mock, setMock] = useState([])
+  
+  const getPodcasts =  async () => {
+    const response =  await fetch("http://localhost:3001/cat")
+    const data = await response.json()
+    console.log(data)
+    setMock(data)
+
+  }
+useEffect(() => {
+  getPodcasts()
+}, [])
+
+const display = 
+  mock.results?.map
 
 
 
@@ -52,7 +67,7 @@ const [categories, SetCategories] = useState([])
 </div>
 
 
-<span id="H1" onClick={openNav}><h1>Categories</h1></span>
+<span id="H1" onClick={openNav}><h1 >Categories</h1></span>
 
 
 <div id="main">

@@ -10,35 +10,46 @@ import "./Ranking.css"
 import Sidemenu from "./Sidemenu";
 import "./Sidemenu.css"
 import Rating from "./Rating";
-import Heart from "./Heart";
+
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Podcast from "./Podcast";
 import heart from "../Images/heart.png"
 import Meter from "./Meter";
 import Stars from "./Rating";
+import Fav from "./Favs";
 
 
 export default function Ranking(props) {
 
 
   const [show, setShow] = useState(false)
-
+  const [save, setSave] = useState([])
   const [styl, setStyl] = useState(true)
   const [podcasts, setPodcasts] = useState([]);
 
 // /=============================================/ API
   const getPodcasts =  async () => {
-    const response = await fetch("http://localhost:3001/mock")
+    const response =  await fetch("http://localhost:3001/mock")
     const data = await response.json()
+    console.log(data)
     setPodcasts(data)
 
   }
 
-  const handleStyle = event => {
-      event.currentTarget.style.backgroundColor = 'salmon';
+  // export default function getUser ()  {
+  //   const options = {
+  //     method: 'GET',
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //     },
+  //   };
+  //   return fetch(URL,  options)
+  //     .then((res) => res.json())
+  //     .catch((error) => {
+  //       console.log(error);
+  //     });
+  // };
 
-    
-  };
 
   const navigate = useNavigate();
 
@@ -69,7 +80,7 @@ export default function Ranking(props) {
           <p className="counter">{counter}</p>
           <div id="logodiv"><a id="podId"><img id="logo" src={el.image} alt="poster" onClick={taker}></img></a></div>
           <div id="rank-place" ><a id="podId"  onClick={taker}><p className="title-p">{[el.title]}</p></a></div>
-          <div id="rating" ><div className="Fafa" ><Stars /><img src={heart} className="hearts" onClick={handleStyle}></img></div></div>
+          <div id="rating" ><div className="Fafa" ><Stars /><Fav liked={props.liked} setLiked={(i) => props.setLiked(i)} title={el.title} ids={el.id}/></div></div>
         
         </li> 
       )})
