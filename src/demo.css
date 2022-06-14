@@ -1,0 +1,15 @@
+.demo {
+  margin-top: 250px;
+  margin-left: 700px;
+  width: 25%;
+  height: 100%;
+  background-color: #FFECCE ;
+  border: solid;
+  box-shadow: 10px 5px  black;
+  border-radius: 5px;
+}
+
+.demowka {
+  width:100%;
+  height: 100%;
+}

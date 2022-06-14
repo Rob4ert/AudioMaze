@@ -5,6 +5,7 @@ import Welcome from "./Welcome";
 import Ranking from "./Ranking";
 import { useEffect, useState } from "react";
 import Buttons from "./Buttons";
+import Fake from "./fakeit"
 // import getPodcasts from "../ApiService"
 
 
@@ -16,7 +17,7 @@ const [liked, setLiked] = useState([])
   return (
     <div className="main"> 
     {after? (<Welcome liked={liked} />) : (<Ranking liked={liked} setLiked={(i)=>setLiked(i)}/>)}
-    {/* <Welcome /> */}
+    {/* <Fake /> */}
     </div>
   )
 }

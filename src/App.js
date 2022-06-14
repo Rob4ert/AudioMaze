@@ -35,7 +35,7 @@ function App() {
   //   setAfter(prevState =>
   //     prevState = !prevState)
   //   }
-  
+  const [cast, setCast] = useState(false)
 
   const [show, setShow] = useState(false)
   const toShow = 
@@ -59,7 +59,8 @@ function App() {
    </Routes>
  </Router>
 </>
-
+const toShowe = 
+    !cast ? <Container /> : <Podcast/>
 
   return (
     <div className="container">
@@ -67,7 +68,7 @@ function App() {
       <div className="main-logo" ><img id="main-logo" src={logo} alt="main logo" onClick={console.log("HELLO")}>
         </img></div>
         <Buttons  setAfter={setAfter} after={after}/>
-        <Search />
+        <Search  />
         </div>
         {toShow}
     </div>

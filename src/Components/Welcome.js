@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import "./Container.css"
 import Waveform from "./Waveform";
-import lucky from "../Britney - Lucky.mp3"
+import plato from "../Images/Plato's Cave.mp3"
 
 export default function Welcome ({liked}) {
   
@@ -16,7 +16,7 @@ export default function Welcome ({liked}) {
        }
 
 
-    const title = "What the Experts Got Wrong (and Right) About Russian Military Power"
+    const title = "Philosophy Bites: Simon Blackburn on Plato's Cave"
   useEffect(() => {
     getLast()
   }, [])
@@ -56,7 +56,7 @@ export default function Welcome ({liked}) {
     <>
     <div className="wilkomen"><h1 id="welcome-title">Jump back</h1></div>
     <div className="lastOne">
-      <Waveform audio={pies}/>
+      <Waveform audio={plato}/>
       <h2>{title}</h2>
     </div>,
     <div className="favs"><h2>Your podcasts:</h2>
