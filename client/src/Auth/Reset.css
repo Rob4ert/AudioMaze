@@ -1,0 +1,40 @@
+.reset {
+  margin-top: 10vh;
+  height: 27vh;
+  width: 30%;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border:solid;
+  box-shadow: 10px 5px  black;
+}
+
+.reset__container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: white;
+  padding: 30px;
+}
+
+.reset__textBox {
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+.reset__btn {
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  border: none;
+  color: white;
+  background-color: black;
+}
+
+.reset div {
+  margin-top: 7px;
+}
