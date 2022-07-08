@@ -8,31 +8,24 @@ AudioMaze is a web app (mobile version coming soon) aimed at those who like to d
 ## Getting Started
 
 1. Clone this repo and enter! 
-  - git clone https://github.com/Rob4ert/AudioMaze
+  - *git clone https://github.com/Rob4ert/AudioMaze*
 
 2. In the project client folder, you can run:
-  - npm i (to install all the required dependencies)
-  - npm start (Node needed)
+  - *npm i (to install all the required dependencies)*
+  - *npm start (Node needed)*
  In the project server directory, you can run:
-  -npm i (same as the above)
-  -node index.js
+  -*npm i (same as the above)*
+  -*node index.js*
   
 
 ### TechStack
-  
-  1. Frontend:
-    - React
-    - Waveform
-    - Firebase
-   
-  2. Backend: 
-    - MongoDB
-    - Mongoose
-    - Express
+        
 
-  3. API:
-    - [Listen Notes](#https://www.listennotes.com/api/)
-      
+|**Frontend**|**Backend**|**Api**|
+|---:|---:|---:|
+|React| MongoDB|  [Listen Notes](#listennotes.com/api/)|
+|Waveform| Mongoose| |
+|Firebase| Express| |
 
 
 ### Screenshots
@@ -42,4 +35,4 @@ AudioMaze is a web app (mobile version coming soon) aimed at those who like to d
 
 ### Developers
 
-  Robert Rybczynski
+  Robert Rybczynski <rob.ryb4@gmail.com>
