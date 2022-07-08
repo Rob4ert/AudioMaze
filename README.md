@@ -34,8 +34,8 @@ AudioMaze is a web app (mobile version coming soon) aimed at those who like to d
 
 ### Screenshots
 
-![Screenshot](audiomaze1.png)
-![Screenshot](audiomaze2.png)
+![Screenshot](audiomaze1.png) ![Screenshot](audiomaze2.png)
+
 
 ### Developers
 
