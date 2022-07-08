@@ -34,8 +34,8 @@ AudioMaze is a web app (mobile version coming soon) aimed at those who like to d
 
 ### Screenshots
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Screenshot](audiomaze1.png)
+![Screenshot](audiomaze2.png)
 
 ### Developers
 
