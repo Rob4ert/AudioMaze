@@ -20,15 +20,18 @@ AudioMaze is a web app (mobile version coming soon) aimed at those who like to d
 
 ### TechStack
   
-  Frontend:
-    - React,
-    - Waveform,
+  1. Frontend:
+    - React
+    - Waveform
     - Firebase
    
-  Backend: 
-    - MongoDB,
-    - Mongoose,
-    - Express,
+  2. Backend: 
+    - MongoDB
+    - Mongoose
+    - Express
+
+  3. API:
+    - [Listen Notes](#https://www.listennotes.com/api/)
       
 
 
