@@ -1,3 +1,8 @@
+body {
+  background-image: url("https://www.transparenttextures.com/patterns/argyle.png");
+  background-color: bisque;
+}
+
 .container {
   width: 100%;
   display: flex;
@@ -10,7 +15,7 @@
 .navbar {
   height: 10vh;
   width: 100%;
-  background-color:white;
+  background-color:bisque;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -68,15 +73,19 @@
   margin-left: 580px;
   width: 30%;
   height: 50%;
-  background-color:white;
+  background-color:bisque;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
+#butt:hover {
+  background-color: blanchedalmond;
+}
+
 #butt {
   width: 20%;
-  background-color: white;
+  background-color: bisque;
   border-radius: 4px;
 }
 /* #butt:hover {
@@ -100,7 +109,6 @@
     height: 85vh;
     width: 80%;
     /* margin-right: 250px; */
-    background-color: white;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -109,4 +117,11 @@
     /* border: solid; */
     overflow-y: hidden;
     overflow-x: hidden;
+    background-image: url("https://www.transparenttextures.com/patterns/argyle.png");
+    background-color: bisque;
+
+}
+
+#login {
+  height: 7em;
 }
