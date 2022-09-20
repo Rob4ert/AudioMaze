@@ -3,7 +3,7 @@ import './Container.css';
 import Waveform from './Waveform';
 
 export default function Welcome() {
-  const [last, setLast] = useState([]);
+  const [last, setLast] = useState<Array<string>>([]);
   const [play, setPlay] = useState(true);
   const [favs, setFavs] = useState([]);
   // /=============================================/ API
@@ -13,7 +13,7 @@ export default function Welcome() {
     setLast(data);
   };
 
-  const title = "Philosophy Bites: Simon Blackburn on Plato's Cave";
+  const title: string = "Philosophy Bites: Simon Blackburn on Plato's Cave";
   useEffect(() => {
     getLast();
   }, []);
@@ -65,7 +65,7 @@ export default function Welcome() {
         <h2>Your podcasts:</h2>
         <ul className="bullets">
           <li>
-            <a id="favslist">{last.title}</a>
+            <a id="favslist">{last[0]}</a>
           </li>
           {/* {addFavos} */}
         </ul>

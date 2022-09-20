@@ -2,7 +2,7 @@ import React from 'react';
 import './Rating.css';
 
 type propsy = {
-  fill: string;
+  // fill: any;
   index: number;
   rating: number;
   hoverRating: number;
@@ -11,7 +11,7 @@ type propsy = {
   onSaveRating: Function;
 };
 
-function StarIcon(props: propsy) {
+function StarIcon(props: any) {
   const { fill = 'none' } = props;
   return (
     <svg
@@ -32,30 +32,31 @@ function StarIcon(props: propsy) {
 }
 
 function RatingIcon(props: propsy) {
-  const {
-    index,
-    rating,
-    hoverRating,
-    onMouseEnter,
-    onMouseLeave,
-    onSaveRating,
-  } = props;
+  // const {
+  //   index,
+  //   rating,
+  //   hoverRating,
+  //   onMouseEnter,
+  //   onMouseLeave,
+  //   onSaveRating,
+  // } = props;
   const fill = React.useMemo(() => {
-    if (hoverRating >= index) {
+    if (props.hoverRating >= props.index) {
       return 'yellow';
-    } else if (!hoverRating && rating >= index) {
+    } else if (!props.hoverRating && props.rating >= props.index) {
       return 'yellow';
     }
     return 'none';
-  }, [rating, hoverRating, index]);
+  }, [props.rating, props.hoverRating, props.index]);
+
   return (
     <div
       className="cursor-pointer"
-      onMouseEnter={() => onMouseEnter(index)}
-      onMouseLeave={() => onMouseLeave()}
-      onClick={() => onSaveRating(index)}
+      onMouseEnter={() => props.onMouseEnter(props.index)}
+      onMouseLeave={() => props.onMouseLeave()}
+      onClick={() => props.onSaveRating(props.index)}
     >
-      <StarIcon fill={fill} />
+      <StarIcon props={fill} />
     </div>
   );
 }
