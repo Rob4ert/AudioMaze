@@ -21,7 +21,7 @@ export default function Fake(props: any) {
   const [show, setShow] = useState(false);
   const [save, setSave] = useState([]);
   const [styl, setStyl] = useState(true);
-  const [podcasts, setPodcasts] = useState([]);
+  const [podcasts, setPodcasts] = useState<any>([]);
 
   // /=============================================/ API
   const getPodcasts = async () => {
